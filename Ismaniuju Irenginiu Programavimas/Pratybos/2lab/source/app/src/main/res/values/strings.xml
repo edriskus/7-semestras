@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">2 Laboratorinis darbas</string>
+    <string name="veikla1">Iveskite norima teksta</string>
+    <string name="veikla2">Suskaiciuokite zodzius</string>
+    <string name="veikla3">Siusti teksta</string>
+    <string name="tekstas">Ivestas tekstas</string>
+    <string name="tekstoIvedimas">Jusu tekstas</string>
+    <string name="jusuTekstas">Ivestas tekstas</string>
+    <string name="saugoti">Saugoti</string>
+    <string name="ivestasTestas">Jusu ivestame tekste</string>
+    <string name="yra">yra</string>
+    <string name="zodziu">zodziu</string>
+    <string name="pasirinkite">Pasirinktie programa</string>
+</resources>

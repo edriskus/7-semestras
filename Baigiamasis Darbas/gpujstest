@@ -1,0 +1,16 @@
+Matrix Multiplication
+
+Create the GPU accelerated function from a kernel function that computes a single element in the 512 x 512 matrix (2D array). The kernel function is run in a parallel manner in the GPU resulting in very fast computations! (...sometimes) 
+
+Intel integrated
+- CPU: 1.707s ±14.3%
+- GPU: 0.130s ±2.7% (13.18 times faster!)
+- CPU: 1.594s ±16.5% (texture)
+- GPU: 0.007s ±20.0% (texture) (238.88 times faster!) 
+
+AMD R5 M255
+- CPU: 1.544s ±17.9%
+- GPU: 0.145s ±0.6% (10.67 times faster!)
+- CPU: 2.599s ±1.2% (texture)
+- GPU: 0.119s ±269.3% (texture) (21.80 times faster!)
+
