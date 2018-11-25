@@ -1,0 +1,2 @@
+- https://en.wikipedia.org/wiki/SETI@home
+- https://en.wikipedia.org/wiki/Arecibo_Observatory
