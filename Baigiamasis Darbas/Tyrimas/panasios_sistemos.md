@@ -15,7 +15,7 @@
   - Atlikti naudingų skaičaivimų prisidedant prie SETI
   - Įrodyti savanoriško skaičiavimo panaudojimo praktiškumą
 - Iš SETI@home išsivystė ir itin sėkmingai buvo išleistas BOINC
--  2005 m. SETI@home Classic versija nustota naudoti, projektas tapo dalimi BOINC
+- 2005 m. SETI@home Classic versija nustota naudoti, projektas tapo dalimi BOINC
 - Veikia ir ant PlayStation 3
 
 ### Veikimo principas
@@ -72,9 +72,30 @@ Contents*
 
 *Berkeley Open Infrastructure for Network Computing*
 
+- Pradėtas 2002 m.
+- 2010 m.  paleistas pirmasis OpenCL projekas
 - Guinness World Records ranks BOINC as the largest computing grid in the world.
 - Veikia su Microsoft Windows, macOS, Android, Linux ir FreeBSD
 - 2018 m. Liepos mėn. duomenimis, galingumas siekia vidutiniškai 26.431 PetaFLOPS
+- Yra išleista mobilioji Android aplikacija (veikia ne visi projektai)
+- "BOINC credit" sistema skirta validuoti ir įvertinti atliktus darbus
+
+### BOINC Credit System
+
+- Naudotojai prisideda prie BOINC projektų dėl šių priežasčių:
+  - To donate to a scientific cause
+    - To advance the specific field of study of a project(s)
+    - To help fight disease may have an emotional connection for those participating
+  - To stress test computers
+    - Processing distributed computing projects places a computer under continuous full CPU load, therefore, overclockers often use the stress to test their system's stability
+  - To team up, earn credit, and compete against other users and teams
+    - Some individuals and teams run many computers and have some dedicated specifically to BOINC in hopes of climbing to the top of the world charts
+  - For personal benefit and recognition
+    - Projects such as PlanetQuest plan on allowing individuals to name those planets discovered using their computers
+    - Projects such as BURP, and Leiden Classical allow users to submit their own operations for use in the system. BURP allows a user to submit models to be rendered, and Leiden Classical allows users to submit physics calculations.
+- Tas pats darbas dažniausiai daromas kelis kartus, kad būtų galima patikrinti jo validumą
+- Kai kurie projektai atlygio "kreditus" skaičiuoja pagal kompiuterio teikiamus resursus
+- "recent average credit (RAC)" padeda nuspėti, kiek vienas naudotojas potencialiai gali atlikti naudingų darbų
 
 ## CoinHive
 
