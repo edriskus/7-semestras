@@ -2,27 +2,28 @@
 
 ## Bendrieji dalykai
 
-- **Programinės įrangos testavimas** yra rizikos valdymo strategija, naudojama verifikuoti, ar programinė įranga ir  jos veikimas bei dokumentavimas atitinka specifikuotus reikalavimus. Testavimas neapsiriboja programinio produkto defektų radimu – testuojama ir programos kokybė, atitiktis standartams, politikoms, teisės aktų reikalavimams ir pan.
-- **Validavimas** yra „aukšto lygio“ tikrinimas, kuris  atsako į klausimą, ar kuriama programinė įranga atitinka užsakovo norus ir reikalavimus. (Panašiai kaip integracinis testas) Ar tinkamą produktą kuriam.
-- **Verifikavimas** atsako į klausimą, ar kuriama programinė įranga ar jos moduliai atitinka specifikaciją. (Panašiai kaip unit testas) Ar teisingai kuriam produktą.
-- **Defektas** (angl. bug) – tai jos sutrikimas, „nulūžimas“, dėl kurio gaunami klaidingi rezultatai arba dėl kurio programinė įranga „elgiasi“ ne taip, kaip laukta/specifikuota.
+- **Programinės įrangos testavimas** - rizikos valdymo strategija, naudojama verifikuoti, ar programinė įranga ir  jos veikimas bei dokumentavimas atitinka specifikuotus reikalavimus. \
+- **Testavimas** neapsiriboja programinio produkto defektų radimu – testuojama ir programos kokybė, atitiktis standartams, politikoms, teisės aktų reikalavimams ir pan.
+- **Validavimas** - „aukšto lygio“ tikrinimas, kuris  atsako į klausimą, ar kuriama programinė įranga atitinka užsakovo norus ir reikalavimus.
+- **Verifikavimas** atsako į klausimą, ar kuriama programinė įranga ar jos moduliai atitinka specifikaciją.
+- **Defektas** (angl. bug) – PĮ sutrikimas
 - **Klaida** reiškia, kad yra kažkoks **defektas**. Jei dėl **defekto** programa neatitinka specifikacijos, tada tai tampa **trikiu**. **Trikis** gali sukelti visos programos **gedimą**.
 - **„Heisenbug**“ – programos defektas, kuris gali išnykti arba pakeisti savo elgseną/veikimą tuomet, kai kas nors ima jį nagrinėti.
 - **Efektas** - kokiu mastu  naudotojas pasiekė nusibrėžtus tikslus, naudodamas sukurtą sistemą/procesą/produktą.
 - **Efektyvumas** - kiek resursų sunaudota, siekiant tikslo.
 - **Yo-yo grafo** paskirtis vizualizuoti polimorfizmus. YO YO grafo mazgai – tai metodai, o orientuotos šakos – tai iškvietimai iš iškviečiančio metodo į iškviečiamą metodą. Punktyrinėmis grafo rodyklėmis jungiami tie metodai, kurių versijos perrašomos, o nepunktyrinėmis - kurie realiai iškvečiami/iškviesti.
-- **Juodosios dėžės testavimas** yra būdas, kurį naudojant, testavimo sąlygos, atvejai, testavimo duomenys yra rašomi pagal specifikacijos reikalavimus, taip pat analizuojant kitą dokumentaciją. Jis apima tiek funkcinį, tiek nefunkcinį testavimą. Juodosios dėžės testavimas nesiremia vidine sistemos ar jos komponentų struktūra,
-- **Baltosios dėžės** testavimas remiasi sistemos arba jos komponentų struktūros analize,
+- **Juodosios dėžės testavimas** - būdas, kurį naudojant, testavimo sąlygos, atvejai, testavimo duomenys yra rašomi pagal specifikacijos reikalavimus, taip pat analizuojant kitą dokumentaciją. Jis apima tiek funkcinį, tiek nefunkcinį testavimą. Juodosios dėžės testavimas nesiremia vidine sistemos ar jos komponentų struktūra
+- **Baltosios dėžės** testavimas remiasi sistemos arba jos komponentų struktūros analize
 - **Pilkosios dėžės** -„baltosios“ ir „juodosios“‘ dėžės testavimo būdų kombinacija, kuomet testuotojas išanalizuoja reikalavimus ir komunikuoja su kūrėjais, siekdamas išsiaiškinti vidinę sistemos struktūrą ir taip eliminuoti daugiaprasmybes; jis skaito „tarp eilučių“, siekdamas sukurti testavimo atvejus.
-- **Regresinis testavimas** - testavimo rūšis, kurios pagrindinė paskirtis – patikrinti, ar naujas kodas išlaiko ankstesnėse versijose veikusį funkcionalumą ir elgseną, testuojant ne tik pasikeitusias sritis bei modulius, bet visą funkcionalumą.
+- **Regresinis testavimas** - testavimo rūšis, kurios pagrindinė paskirtis – patikrinti, ar naujas kodas *išlaiko ankstesnėse versijose veikusį funkcionalumą ir elgseną*, testuojant ne tik pasikeitusias sritis bei modulius, bet visą funkcionalumą.
 - **Negatyvus testavimas** – testavimas, atliekamas, turint negatyvų požiūrį, siekiant patikrinti tai, ką sistema atlieka klaidingai; šis požiūris padeda rasti defektus.
 - **Kodo padengimas/aprėptis** – matas, parodantis, kiek (kuri dalis) programinės įrangos kodo buvo vykdoma testuojant.
-- **Alfa** testavimą atlieka kūrėjai ir testuotojai;(user acceptance testing level) - tai priėmimo testavimo tipas, skirtas defektams bei klaidoms rasti iki produkto versijos pateikimo naudotojams. Testavimo metu fokusuojamasi į produkto veikimo modeliavimą, lyg su juo dirbtų realūs naudotojai. Naudojamas tiek baltosios, tiek juodosios dėžės principai. Alfa testavimas vykdomas testinėje aplinkoje, o testuotojai tipiškai būna įmonės, kuriančios produktą, darbuotojai - komandos nariai. Šis testavimas atliekamas produkto kūrimo pabaigoje, ir alfa testavimu vadinamas dėl to, kad yra ankstyvas. 
-- **Beta** testavimas atliekamas pas klientą/užsakovą (angl. before delivery), atlieka naudotojai - Beta testavimą atlieka realūs naudotojai realioje („live“) aplinkoje. Tai išorinio  priėmimo testavimo forma. Beta versija pateikiama ribotam skaičiui produkto naudotojų tam, kad jie, ištestavę produktą, pateiktų grįžtamąjį ryšį apie produkto kokybę. Beta testavimas minimizuoja produkto rizikas bei defektų tikimybę, taip pat gerina produkto kokybę. Tai paskutinysis testavimas, atliekamas, prieš pateikiant produktą realiam naudojimui
+- **Alfa** testavimą atlieka kūrėjai ir testuotojai
+- **Beta** testavimas atliekamas pas klientą/užsakovą (angl. before delivery), atlieka naudotojai - Beta testavimą atlieka realūs naudotojai realioje („live“) aplinkoje
 - **Gama** testavimas atliekamas pas klientą, kai programinės įrangos einamoji versija parengta išleidimui.
-- Derinimas (angl. Debugging) – programinės įrangos defektų ar problemų radimo ir koregavimo procesas, apimantis kintamųjų momentinių reikšmių analizę, programos veikimo „kelių“ (angl. paths) analizę
+- **Derinimas** (angl. Debugging) – programinės įrangos defektų ar problemų radimo ir koregavimo procesas, apimantis kintamųjų momentinių reikšmių analizę, programos veikimo „kelių“ (angl. paths) analizę
 - **Burndown** - Diagrama, kurioje parodoma, kaip greitai ir jūsų komanda susidoroja su naudotojų istorijom (user stories). Tai rodo bendrą pastangų kiekį, palyginti su kiekvienos iteracijos pristatymu.
-- **Smoke“ testavimas**- programinės įrangos testavimo rūšis, apimanti testavimą po programinės įrangos komponentų surinkimo/parengimo diegimui („build“) ir prieš instaliavimą (pvz., patikrinti, ar programa iš principo pasileidžia); „smoke“ testavimo tikslas – užtikrinti, kad kritinis ir svarbiausias funkcionalumas veikia korektiškai, taupant laiką pakartotiniam instaliavimui ir testavimui nekorektiškai veikiančios programinės įrangos atveju.  „Smoke“ testavimas atliekamas prieš detalų funkcinį ir regresijos testavimą.
+- **Smoke“ testavimas** - programinės įrangos testavimo rūšis, apimanti testavimą po programinės įrangos komponentų surinkimo/parengimo diegimui („build“) ir prieš instaliavimą (pvz., patikrinti, ar programa iš principo pasileidžia); „smoke“ testavimo tikslas – užtikrinti, kad kritinis ir svarbiausias funkcionalumas veikia korektiškai
 - **ISTQB® (International Software Testing Qualifications Board)** is a not-for-profit association legally registered in Belgium.
 - **Extreme programming (XP)** is a software development methodology which is intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development,[1][2][3] it advocates frequent "releases" in short development cycles, which is intended to improve productivity and introduce checkpoints at which new customer requirements can be adopted. 
 - **Hipotezių testavimas** - statistinis testavimas, naudojamas siekiant nustatyti, ar duomenų pavyzdyje yra pakankamai įrodymų, leidžiančių daryti išvadą, kad tam tikra sąlyga tinka visai populiacijai.
@@ -33,29 +34,29 @@
 
 ### Web aplikacijų testavimas (įskaitant Web aplikacijų patikimumo ir saugos testavimą).
 
-- Web application testing, a software testing technique exclusively adopted to test the applications that are hosted on web in which the application interfaces and other functionalities are tested.
+- Web application testing, a software testing technique exclusively adopted to test the applications that are **hosted on web** in which the application interfaces and other functionalities are tested.
 - Testavimo metodai:
-  - Funkcionalumo testavimas:
+  - **Funkcionalumo testavimas**:
     - Verify there is no dead page or invalid redirects.
     - First check all the validations on each field.
     - Wrong inputs to perform negative testing.
     - Verify the workflow of the system.
     - Verify the data integrity.
-  - Panaudojamumo testavimas
+  - **Panaudojamumo testavimas**
     - Test the navigation and controls.
     - Content checking.
     - Check for user intuition.
-  - Sąsajos testavimas (verify the interface and the dataflow from one system to other)
-  - Suderinamumo testavimas
+  - **Sąsajos testavimas** (verify the interface and the dataflow from one system to other)
+  - **Suderinamumo testavimas**
     - Browser compatibility
     - Operating system compatibility
     - Compatible to various devices like notebook, mobile, etc.
-  - Našumo testavimas
+  - **Našumo testavimas**
     - Apkrovos testai
     - Streso testai
     - Ištvermės testai
     - "Spike Testing" - staiga atsiranda didžiulis kiekis naudotojų
-  - Saugumo testavimas
+  - **Saugumo testavimas**
     - Injection
     - Broken Authentication and Session Management
     - Cross-Site Scripting (XSS)
@@ -70,12 +71,12 @@
 ### WS testavimas.
 
 - Web Service testing
-- Web Services is the mechanism or the medium of communication through which two applications / machines will exchange the data irrespective of their underline architecture and the technology. 
+- Web Services is the mechanism or the medium of communication through which two applications / machines will exchange the data irrespective of their underline architecture and the technology.
 - Naudojami 2 pagrindiniai Web Servisų protokolai:
   - SOAP (Simple Object Access Protocol) - naudoja XML
   - REST (Representational State Transfer architecture) - naudoja HTTP
 - **WSDL** (Web Services Description Language) is an XML based language which will be used to describe the services offered by a web service.
-- Testavimo žingsniai:
+- **Testavimo žingsniai**:
   - Understand the WSDL file
   - Determine the operations that particular web service provides
   - Determine the XML request format which we need to send
@@ -88,19 +89,19 @@
 
 ### Objektiškai orientuotas testavimas: problemos, iššūkiai.
 
-Orientuoto testavimo lygmenys:
+Objektiskai orientuoto testavimo lygmenys:
 
-1. Operation/Method Testing : Performed for classes, blocks and service packages. There are two ways of selecting units :
+1. **Operation/Method** Testing : Performed for classes, blocks and service packages. There are two ways of selecting units :
    1. Methods as Units
    2. Classes as Units
-2. Class Testing : Intra & Inter class testing is done, test interaction between previously tested methods.
-3. Integration Testing : Interaction between previously tested classes
+2. **Class** Testing : Intra & Inter class testing is done, test interaction between previously tested methods.
+3. **Integration** Testing : Interaction between previously tested classes
    1. Execution Based Integration Testing :Reveals erroneous interaction of units by tracing their execution.
    2. Value Based Integration Testing : Boundary value testing and equivalence class partitioning done by employing action values.
    3. Function Based Integration Testing : Validate functionality of components.
-4. System Testing : Exercising the whole system is done in this testing. Testing conducted on the complete integrated products & solutions to evaluate system compliance on functional and non-functional requirements is called system testing.
+4. **System** Testing : Exercising the whole system is done in this testing. Testing conducted on the complete integrated products & solutions to evaluate system compliance on functional and non-functional requirements is called system testing.
 
-**Polimorfizmas**: teoriškai reikėtų ištestuoti visus galimus susiejimus(bindings; dinaminio susiejimo atveju kodas, kuris realizuoja funkcionalumą, nėra žinomas iki jo vykdymo), bet tai – didelė apimtis,be to, sunku identifikuoti visus sąryšius(bindings);
+**Polimorfizmas**: teoriškai reikėtų ištestuoti visus galimus susiejimus (bindings; dinaminio susiejimo atveju kodas, kuris realizuoja funkcionalumą, nėra žinomas iki jo vykdymo), bet tai – didelė apimtis, be to, sunku identifikuoti visus sąryšius(bindings);
 
 **Flattening inheritance**:
 
@@ -128,9 +129,7 @@ Orientuoto testavimo lygmenys:
 
 **Testavimo automatizavimas** – tai specialios programinės įrangos (kitos, nei testuojama) naudojimas testų atlikimui kontroliuoti bei gautų rezultatų palyginimui su laukiamais.
 
-Testų automatizavimo priemonės ne tik padeda automatizuoti testų atlikimą, bet ir įgalina pateikti/įvesti testavimo duomenis testuojamam komponentui, palyginti laukiamą ir gautą rezultatus,  formuoti testavimo ataskaitas. Automatizuotas testavimas įgalina pakartotinį jau parengtų testų vykdymą. 
-
-Automatizuotas testavimas naudojamas:
+Automatizuotas testavimas **naudojamas**:
 
 - tuomet, kai rankinis testavimas labai lėtas,
 - tuomet, kai reikia pratestuoti daugiakalbį interfeisą, svetaines ir pan.,
@@ -146,15 +145,15 @@ Automatizuotas testavimas naudojamas:
 
 Testavimo karkasai automatizuotam testavimui:
 
-- Duomenų valdymo automatizavimo karkasas (angl. Data Driven Automation Framework), naudojantis duomenų valdymo skriptus (angl.  data driven scripts).
-- Raktiniais žodžiais/lentelėmis paremtas automatizavimo karkasas (angl.  Keyword Driven Automation Framework) yra nuo aplikacijos nepriklausantis automatizavimo karkasas, sukurtas testų apdorojimui. 
-- Modulinis automatizavimo karkasas (angl. modular Automation Framework) dalina testuojamą aplikaciją į eilę loginių izoliuotų modulių.  
-- Sėkmingiausiai naudojamas hibridinis automatizavimo karkasas (angl. Hybrid Automation Framework), naudojantis tiek duomenų valdymo skriptus (angl.  data driven scripts), tiek raktiniais žodžiais/lentelėmis paremtą automatizavimo karkasą.
-- Elgsena paremtas automatizavimo karkasas (angl. Behavior Driven Development (BDD) framework), įgalinantis lengvą funkcinių validacijų automatizavimą.
+- **Duomenų valdymo** automatizavimo karkasas (angl. Data Driven Automation Framework), naudojantis duomenų valdymo skriptus (angl.  data driven scripts).
+- **Raktiniais žodžiais/lentelėmis paremtas** automatizavimo karkasas (angl.  Keyword Driven Automation Framework) yra nuo aplikacijos nepriklausantis automatizavimo karkasas, sukurtas testų apdorojimui.
+- **Modulinis** automatizavimo karkasas (angl. modular Automation Framework) dalina testuojamą aplikaciją į eilę loginių izoliuotų modulių.  
+- (Sėkmingiausiai naudojamas) **hibridinis** automatizavimo karkasas (angl. Hybrid Automation Framework), naudojantis tiek duomenų valdymo skriptus (angl.  data driven scripts), tiek raktiniais žodžiais/lentelėmis paremtą automatizavimo karkasą.
+- **Elgsena paremtas** automatizavimo karkasas (angl. Behavior Driven Development (BDD) framework), įgalinantis lengvą funkcinių validacijų automatizavimą.
 
 ### Ciklų testavimas.
 
-**Ciklų testavimas** – tai ciklo konstrukcijų validacija. Tai Kontrolės struktūrų testavimo poaibis (kelių testavimas, duomenų validacijos testavimas, sąlygų testavimas). Tai „baltosios dėžės“ principu paremtas struktūrizuotas  testavimas, kai testuotojas dirba su progrminės įrangos išeities tekstu, rengdamas testavimo atvejus (kelių testavimas, duomenų validavimas, sąlygų testavimas).
+**Ciklų testavimas** – „baltosios dėžės“ principu paremtas struktūrizuotas  testavimas, kai testuotojas dirba su programinės įrangos išeities tekstu, rengdamas testavimo atvejus (kelių testavimas, duomenų validavimas, sąlygų testavimas).
 
 Ciklinis testavimas skirtas:
 
@@ -163,13 +162,13 @@ Ciklinis testavimas skirtas:
 - tam, kad nustatyti neinicializuotus kintamuosius (kintamuosius, kuriems nepriskirtos pradinės reikšmės),
 - tam, kad nustatyti ciklo inicializavimo problemas
 - Testavimo strategija ciklų testavimui – ciklas turi būti patikrintas trijuose skirtinguose lygmenyse:
-- ciklo pradžioje,
-- ciklo vykdymo eigoje,
-- ciklui pasibaigus.
+  - ciklo pradžioje,
+  - ciklo vykdymo eigoje,
+  - ciklui pasibaigus.
 
 ### Testavimo aplinka. Testavimo specifika, naudojant debesijos paslaugas.
 
-**Testavimo aplinka** – tai įdiegta ir atitinkamai sukonfigūruota programinės, techninės ir tinklo įrangos sąranka, skirta testavimui, tai yra testavimo atvejų vykdymui. Konfigūruojama pagal poreikį, atitinkantį testuojamos aplikacijos testavimo tikslus.
+**Testavimo aplinka** – tai įdiegta ir atitinkamai sukonfigūruota programinės, techninės ir tinklo įrangos sąranka, skirta testavimo atvejų vykdymui.
 
 Testinės aplinkos parengimas apima tokių komponentų paruošimą testavimui:
 
@@ -183,7 +182,7 @@ Testinės aplinkos parengimas apima tokių komponentų paruošimą testavimui:
 - techninę įrangą, serverių  operacines sistemas, 
 - konfigūravimo dokumentaciją, diegimo/instaliavimo vadovus, naudotojo vadovus, kitą dokumentaciją.
 
-Testinės aplinkos parengimo procese dalyvauja sistemos administratoriai, naudotojų administratoriai, programinės įrangos kūrėjai ir testuotojai, techniniai specialistai, kartais – naudotojai. 
+Testinės aplinkos parengimo procese dalyvauja sistemos administratoriai, naudotojų administratoriai, programinės įrangos kūrėjai ir testuotojai, techniniai specialistai, kartais – naudotojai.
 
 Testavimo specifika naudojant debesijos paslaugas:
 
@@ -220,7 +219,7 @@ Testavimo specifika naudojant debesijos paslaugas:
 
 ### Integracinis testavimas. Integracinio testavimo metodai/būdai (apibūdinti)
 
-**Integracijos testavimas** – tai testavimo rūšis, kuri skirta patikrinti, ar visi reikiami komponentai įtraukti į sistemą, ar jų sąsajos yra suderintos ir tarpusavio sąveikos funkcionuoja  korektiškai. Tipiškai jis atliekamas po vienetų/komponentų testavimo, prieš kokybės kontrolę - validavimą. Integracinio testavimo metu imami jau ištestuoti sistemos komponentai arba jų grupės, ir su jais  atliekami integraciniai testai, parengti pagal integracijos testavimo plane numatytus ir parengtus testavimo atvejus.  Integracinio testavimo rezultatas – išvada, kad integruota sistema (ne)parengta testavimui
+**Integracijos testavimas** – tai testavimo rūšis, kuri skirta patikrinti, ar visi reikiami komponentai įtraukti į sistemą, ar jų sąsajos yra suderintos ir tarpusavio sąveikos funkcionuoja  korektiškai. Tipiškai jis atliekamas po vienetų/komponentų testavimo, prieš kokybės kontrolę - validavimą. Integracinio testavimo metu imami jau ištestuoti sistemos komponentai arba jų grupės. Integracinio testavimo rezultatas – išvada, kad integruota sistema (ne)parengta testavimui
 
 **Sąsajos testavimas** – tai integracinio testavimo tipas, kuris koncentruojasi į sąsajos tarp komponentų arba sistemų testavimą arba tai apibrėžtos sąsajos su komponentu arba sistema testavimas.
 
@@ -232,7 +231,7 @@ Testavimo būdai:
 
 ### Priėmimo testavimas, jo rūšys. Apibūdinti.
 
-**Priėmimo testavimas** nustato, ar galutinis produktas atitinka naudotojo reikalavimus. Priėmimo testavimo proceso sritis yra vykdomoji. Vykdomosiomis veiklomis vadinamos visos ne projektavimo veiklos, o veiklos, kurių rezultatas – aptikti defektai. Vykdant priėmimo testavimo veiklą atliekamas reikalavimų verifikavimas. Dėl šios priežasties proceso sritis jungiama asociatyviu sąryšiu su PS kūrimo proceso reikalavimų analizės veikla.
+**Priėmimo testavimas** nustato, ar galutinis produktas atitinka naudotojo reikalavimus. 
 
 - Rūšys:
   - Alfa ir Beta
@@ -273,13 +272,13 @@ Testuojant stengiamasi imituoti trikius tuo metu, kai jie gali būti operatyviai
   - Fokusuojasi į testavimo atlikimą
   - Orientuotas į produktą
   - Koreguojantis procesas
-  - Kokybės kontrolės procesų poaibis(testavimas – dalis kokybės kontrolės)
+  - Kokybės kontrolės procesų poaibis (testavimas – dalis kokybės kontrolės)
 
 ### Testavimo scenarijai ir testavimo atvejai. Apibūdinti.
 
-**Testavimo atvejis** – tai sąlygų ir kintamųjų aibė, kuria remiantis testuotojas sprendžia, ar sistema funkcionuoja korektiškai ir ar atitinka reikalavimus. Rengiant testavimo atvejus, taip pat aptinkamos klaidos reikalavimų specifikacijoje arba sistemos projekte. Testavimo atvejo struktūra.
+**Testavimo atvejis** – tai sąlygų ir kintamųjų aibė, kuria remiantis testuotojas sprendžia, ar sistema funkcionuoja korektiškai ir ar atitinka reikalavimus. Rengiant testavimo atvejus, taip pat aptinkamos klaidos reikalavimų specifikacijoje arba sistemos projekte.
 
-Testavimo atvejį nusako testo atlikimo pradžios sąlygos(pre-conditions) ir testavimo įvesties pasekoje, atlikus testavimo atvejo žingsnius,    grąžinti rezultatai, kai sistema/produktas pereina į būseną, nusakomą post-sąlygomis (post-conditions).
+Testavimo atvejį nusako testo atlikimo pradžios sąlygos (pre-conditions) ir testavimo įvesties pasekoje, atlikus testavimo atvejo žingsnius, grąžinti rezultatai, kai sistema/produktas pereina į būseną, nusakomą post-sąlygomis (post-conditions).
 
 **Testavimo scenarijus** – tai testavimo veiklos struktūros aprašymas. Jis apima vaidmenų sąrašą bei vaidmenų atliekamas testavimo veiklas ( pvz., vaidmenys - buhalteris, kasininkas; testavimo veiklas – sukurti prekių realizavimo  dokumentus).
 
@@ -302,7 +301,7 @@ Metrikų pavyzdžiai:
 ### Testavimo strategijos tipai pagal ISTQB. Apibūdinti.
 
 - **Analitinė strategija** apima dvi bendras testavimo strategijas: reikalavimais paremtą testavimą ir rizika paremtą testavimą. Testavimo komanda ja vadovaujasi, analizuodama testavimo bazę, testavimo sąlygas ir pan.
-- **Modeliu paremta strategija** orientuojasi į operacinius profailus, kurių variantai dažnai naudojami veikimo ir patikimumo testavimui. Ji taip pat orientuota į formalius modelius, pvz., sukurtus UML notacija. Formalių modelių atveju dažnai modeliai naudojami ne patikimumo testavimui, o funkciniam testavimui. Ši strategija pasiteisina, kai testavimo komanda modeliuoja realią  aplinką, kurioje sistema funkcionuos, taip pat kuriamos sistemos elgseną tos aplinkos sąlygomis. Modelis rengiamas pagal faktinius arba prognostinius duomenis.
+- **Modeliu paremta strategija** orientuojasi į operacinius profilius, kurių variantai dažnai naudojami veikimo ir patikimumo testavimui. Ji taip pat orientuota į formalius modelius, pvz., sukurtus UML notacija. Formalių modelių atveju dažnai modeliai naudojami ne patikimumo testavimui, o funkciniam testavimui. Ši strategija pasiteisina, kai testavimo komanda modeliuoja realią  aplinką, kurioje sistema funkcionuos, taip pat kuriamos sistemos elgseną tos aplinkos sąlygomis. Modelis rengiamas pagal faktinius arba prognostinius duomenis.
 - **Metodikomis paremta strategija** orientuota į standartinės testavimo sąlygų aibės naudojimą (testavimo baze pairenkamas testavimo metodas, standartas, tipiniai kontroliniai sąrašai ir pan.), pvz., testuojama atitiktis  kokybės standartui ISO 9126 (“Programinės įrangos kokybės charakteristikos”). Standartai gali būti taikomi tam tikram testavimo tipui, pvz., saugumo testavimui.  Strategijoje numatytų testavimo sąlygų (test conditions) aibė išlieka ta pati visose iteracijose, taip pat kuriant visas produkto versijas.
 - **Procesą arba standartą atitinkanti strategija** numato testavimo proceso eigą tokią, kokia yra aprašyta/nustatyta  kompetentingų asmenų, pvz., standartų komiteto. Tpiškai procesai būna dokumentuoti, aiškiai identifikuojami (pvz., AGILE metodika, IEEE (standartų organizacijos) standartai), o strategija numato, kad testuojant ir/arba  atliekant testavimo valdymą, reikia jų laikytis.
 - **Reaktyvi strategija** yra dinaminė (požiūris į testavimą evoliucinis, greitai kinta, vystosi) ir euristinė, paremta atvejų identifikavimų, remiantis patirtimi, o ne modeliais ir/arba standartais. Testavimo atvejai rašomi tik po to, kai „gaunamas“ testavimo vienetas. Tai reagavimo į realiai testuojamos sistemos ar jos komponento veikimą, elgseną ar savybes strategija. Gali būti taikoma tiek iteraciniam, tiek nuosekliam sistemos kūrimo metodui. Gali apimti iš anksto turimų struktūrų panaudojimą, pvz., atakuojančią programinę įrangą.
@@ -319,7 +318,7 @@ Metrikų pavyzdžiai:
 7. Verified
 8. Closed
 
-Defekto svarba yra susijusi su sunkumu. Paprastai sunkumas apibrėžiamas kaip finansiniai nuostoliai, žala aplinkai, įmonės reputacija.
+Defekto svarba yra susijusi su sunkumu. Paprastai **sunkumas apibrėžiamas** kaip finansiniai nuostoliai, žala aplinkai, įmonės reputacija.
 
 Defekto prioritetas yra susijęs su tuo, kaip greitai klaida turėtų būti ištaisyta ir paleista įmonės veikiančiuose serveriuose. Kai defektas yra didelis, greičiausiai jis taip pat turės aukštą prioritetą. Panašiai ir su mažo sunkumo defektais, tada jie turi žemą prioritetą.
 
@@ -348,7 +347,7 @@ Defekto prioritetas yra susijęs su tuo, kaip greitai klaida turėtų būti išt
 
 ### Agile testavimo specifika.
 
-Laikomasi taisyklės, kad jokioje iteracijoje sukurtos ir įdiegtos savybės(angl. features) nelaikomos baigtomis kurti iki tol, kol neatliekama visų sistemos dalių integracija ir neatlikti sistemos testai. Gera praktika taip pat laikoma tai, kad ankstesnėje iteracijoje nebaigti taisyti defektai baigiami ištaisyti sekančios iteracijos pradžioje.
+Laikomasi taisyklės, kad jokioje iteracijoje sukurtos ir įdiegtos savybės (angl. features) nelaikomos baigtomis kurti iki tol, kol neatliekama visų sistemos dalių integracija ir neatlikti sistemos testai. Gera praktika taip pat laikoma tai, kad ankstesnėje iteracijoje nebaigti taisyti defektai baigiami ištaisyti sekančios iteracijos pradžioje.
 
 ### Pateikti tradicinio V, viengubo V, dvigubo VV, trigubo VVV modelio apibūdinimą testavimo požiūriu. Ką modeliai nusako? Koks skirtumas tarp jų?
 
