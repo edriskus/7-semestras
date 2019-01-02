@@ -1,6 +1,7 @@
 # 7 semestras
 
 - [Informatikos Teise](https://edriskus.github.io/7-semestras/Informatikos%20Teise/konspektas)
+- [Programų Sistemų Testavimas] (https://edriskus.github.io/7-semestras/Programu%20Sistemu%20testavimas/egzaminas)
 
 ```none
 "THE BEER-WARE LICENSE" (Revision 42):
