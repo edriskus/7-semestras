@@ -220,7 +220,21 @@ Klausimai
 
 ### Kompresijos kodai ir klaidų korekcija. Paskaitos: 1) Compression codes 2) Error correction
 
-- ...
+- When we represent information, such as an image, digitally, it means we must slice it up into tiny chunks. This allows us to send an image as a sequence of color symbols, and these colors can be represented as unique numbers, using some code.
+- **David Huffman** famously provided the optimal strategy, which he published in 1952, and based on building a binary tree from the bottom up. **Huffman Coding:**
+  - First, list all symbols at the bottom (nodes).
+  - Then we find the two least probable nodes, in this case B and C, and merge them into one, and add the probabilities together.
+  - Repeat with the next two least likely nodes, and continue merging until you have a single node at the top.
+  - Finally, we label the edges in this tree with 0 or 1 in any order.
+  - The code for each letter is just the path from the top of the tree to the given letter.
+- Claude Shannon was the first to claim that the **limit of compression** will always be the **entropy** of the message source.
+- As the entropy decreases, the ability to compress increases
+
+![Huffman Coding](https://i.stack.imgur.com/9T1Am.png)
+
+---
+
+
 
 ### SETI projektas Paskaitos: 1) The search for extraterrestrial intelligence
 
