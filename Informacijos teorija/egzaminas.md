@@ -114,18 +114,35 @@ Klausimai
 
 ---
 
-- Take two pieces of metal: copper and zinc which you connect to conducting wires and you then submerge the metals in an electrolyte (in this case vinegar).
-- Towards the end of the 18th century Alessandro Volta found that chaining these cells together would amplify this flow of charge.
+- Take two pieces of metal: **copper** and **zinc** which you connect to conducting wires and you then submerge the metals in an **electrolyte** (in this case vinegar).
+- Towards the end of the 18th century **Alessandro Volta** found that chaining these cells together would amplify this flow of charge.
 - By 1800 he simplified things even further removing the jar which provided more electrolyte than was actually needed - replacing it with a thin sponge material soaked in electrolyte. Such simple cells could be stacked together on top of each other.
-- Voltaic pile, the first battery in history to provide a continuous flow of electrical charge, or current.
-- the Bubble Telegraph involved 26 different circuits, one for each letter and it was based on the fact that the battery providing the current can be placed at a distance away from jars of water containing the leads creating the bubbles. This system was never adopted.
+- **Voltaic pile**, the first battery in history to provide a continuous flow of electrical charge, or current.
+- the **Bubble Telegraph** involved 26 different circuits, one for each letter and it was based on the fact that the battery providing the current can be placed at a distance away from jars of water containing the leads creating the bubbles. This system was never adopted.
 - In 1819 it was found that if we simply pass a wire near a compass and connected to a battery as soon as the wire made contact with the battery the needle jumped without any physical contact.
 - By 1824 William Sturgeon demonstrated a way to increase the strength of this field even more, simply by wrapping a coil of wire around a piece of iron such as a nail. 
 - Suddenly it was possible to create magnetic fields which could move needles with precision and force using electric current applied at a distance using a long loop of wire and a strong battery.
 
 ---
 
-
+- 1832 mathematician Carl Gauss and physics professor William Weber connected their observatory with the laboratory using a galvanometer
+  - A switch connected in one end would reverse the electrical current in two directions
+  - On the other end, the galvanometer deflected left or right based on the direction of the electrical current
+  - Such a system had two states: left or right deflection
+  - They assigned shorter symbols for most used alphabet letters (e.g., A - single right turn and E - single left turn) and longer symbols for less used letters (e.g., K - three right deflections)
+- However, the signaling rate was slow because of the needle movements (max. 1 deflection per second)
+- In 1848 the cost of sending 20 symbols was one week's salary for a shop owner (too expensive)
+- Samuel Morse, in collaboration with Albert Vail, invented the spring-loader lever (key)
+  - On the receiving end, was a spring-loaded lever that made clicking noises with the help of an electromagnet
+  - Morse varied the length of a keypress:
+    - Dot - short keypress
+    - Dash - 3 times longer than a dot
+  - The scheme assigned shorter letter sequences for more common letter (based on books)
+  - After a letter, the system inserts a 3 dot length pause
+- The simplicity of this key system made it much faster than any needle telegraph
+- By 1900 the cost of a single message dropped to 30 cents per message
+- Code books were later invented that mapped single words to pupular sencences, which reduced the cost furthermore
+  - "Blade" meant "Please name and reserve for myself and family the following accomodations"
 
 ### Simbolių perdavimo greitis ir kanalo talpumas. Paskaitos: 1) Symbol rate   2) Channel capacity
 
