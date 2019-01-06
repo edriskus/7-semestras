@@ -248,8 +248,19 @@ Klausimai
 
 ### SETI projektas Paskaitos: 1) The search for extraterrestrial intelligence
 
-- ...
-
+- The modern search for extraterrestrial intelligence, or **SETI**, began in 1959 with two Cornell physicists, Giuseppi Cocconi and Philip Morrison
+- Researchers assume that any intelligent civilization will have discovered the ability to **transmit radio waves**.
+- At the first SETI meeting in 1961, John Lilly proposed that researchers study **dolphin languages** to help them learn more about what extraterrestrial signals might be like.
+- The Zipf's law:
+  - At first, when Human **babies** learn to speak, the sounds produced are more or less random, or unstructured. (Flat slope on graph)
+  - However, as children learn the language of their parents, **structure** is imposed on our speech patterns.
+  - If we plot all sounds by how often they appear, the slope of this graph converges towards a 45 degree angle, or a **-1 slope** on a log-log chart.
+  - What's interesting is that this same slope appears in **different human languages**, and seems to be a pattern all humans share.
+  - Even more surprising is that this pattern also emerged when studying **dolphin** communication.
+- Doyle and McCowan calculated the entropy for **different depths**, or orders, so single words is first order, groups of two words is second order, groups of three words is third order, and so on. Then they plotted the value of information entropy against this depth. For adult humans, as we may expect, they found that the **information entropy decreases as the depth increases**.
+  - Amazingly, Doyle and McCowan did the same thing with **dolphin** languages, and **found the same pattern**.
+- As Doyle puts it, if we get a **narrow band signal**, a **-1 slope on the Zipf plot**, and **higher order Shannon entropies**, we've nailed it (finding ET communication)
+  
 ## II Dalis (Skaityti 1-10 skyrius iš knygos)
 
 ### Binarinis simetrinis kanalas ir klaidų korekcijos kodai (Žiūrėti skaidres: Information theory Lect3 v1  )
