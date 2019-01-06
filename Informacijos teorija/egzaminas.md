@@ -125,18 +125,18 @@ Klausimai
 
 ---
 
-- 1832 mathematician Carl Gauss and physics professor William Weber connected their observatory with the laboratory using a galvanometer
+- 1832 mathematician Carl Gauss and physics professor William Weber connected their observatory with the laboratory using a **galvanometer**
   - A switch connected in one end would reverse the electrical current in two directions
   - On the other end, the galvanometer deflected left or right based on the direction of the electrical current
-  - Such a system had two states: left or right deflection
+  - Such a system had two states: **left** or **right** deflection
   - They assigned shorter symbols for most used alphabet letters (e.g., A - single right turn and E - single left turn) and longer symbols for less used letters (e.g., K - three right deflections)
 - However, the signaling rate was slow because of the needle movements (max. 1 deflection per second)
 - In 1848 the cost of sending 20 symbols was one week's salary for a shop owner (too expensive)
-- Samuel Morse, in collaboration with Albert Vail, invented the spring-loader lever (key)
+- **Samuel Morse**, in collaboration with Albert Vail, invented the spring-loader lever (key)
   - On the receiving end, was a spring-loaded lever that made clicking noises with the help of an electromagnet
   - Morse varied the length of a keypress:
-    - Dot - short keypress
-    - Dash - 3 times longer than a dot
+    - **Dot** - short keypress
+    - **Dash** - 3 times longer than a dot
   - The scheme assigned shorter letter sequences for more common letter (based on books)
   - After a letter, the system inserts a 3 dot length pause
 - The simplicity of this key system made it much faster than any needle telegraph
@@ -146,11 +146,51 @@ Klausimai
 
 ### Simbolių perdavimo greitis ir kanalo talpumas. Paskaitos: 1) Symbol rate   2) Channel capacity
 
-- ...
+- Primary symbols - letters
+- Secondary symbols - (Morse Code signals) the lower-level signaling events, such as pulses of electricity
+- Baudot Multiplex System (1874) consisted of 5 keys which could be played in any combination. The code assigned the 32 different chords to each letter of the alphabet with the leftovers used for carriage returns, new line and spaces.
+- The iambic counter, the mechanical nerves of the system, change words to holes on tape, and the holes on tape to electrical impulses speeding over the wires.
+- The speed of transmission was physically limited by the **minimum spaces** between these impulses or the pulse rate.
+  - Sending pulses too fast, results in **inter-symbol interference**.
+- The **symbol rate** is the number of signaling events which can be squeezed together in one second
 
+---
+
+- There was one other way to increase the capacity of a communication system - We can increase the number of different signaling events.
+- This was an idea implemented by Thomas Edison, which he applied to the Morse code system, and it was based on the idea that you could use weak and strong batteries to produce signals of different strengths. He also used two directions, as Gauss and Weber did, forward versus reverse current and two intensities. So he had plus three volts, plus one volt, minus one volt, and minus three volt. Four different current values which could be exchanged.
+- Quadruplex telegraph used such a system and continued to be used into the 20th century.
+- Fine grained differences lead to difficulties on the receiving end.
+- The capacity of a communication system can be defined using these two very simple ideas:
+  - First, how many symbol transfers per second? Which we called **symbol rate**. And today it's known simply as **baud**, for Émile Baudot.
+  - Second, how many differences per symbol? Which we can think of as the **symbol space**. And we can call this **s**.
+- After **n** symbols, we have a tree with** s^n** leaves.
+- **The message space** is simply the **width of the base** of one of these trees. It defines the total number of possible messages one could send given a sequence of n symbols.
+- **Channel capacity** of a given channel is the highest information rate (in units of information per unit time) that can be achieved with arbitrarily small error probability.
+  
 ### Informacijos kiekio pamatavimas. Markovo grandinės. Paskaitos: 1) Measuring information  2)  Markov chains
 
-- ...
+- Information measuring is based on the **minimum number of questions** to define the message or the height of the decision tree, and since it is usually transmitted as binary digits, we can shorten this and call our unit the **bit**, instead of binary digit.
+  - It is calculated as the logarithm of the number of possible symbol sequences.
+  - 10 coin flips requires 10 bits, the six-letter word requires 28.2 bits, and the poker hand requires 28.5 bits.
+- In 1928, Ralph Hartley, who built on the ideas of Harry Nyquist (Bell Labs), published an important paper titled, "The Transmission of Information":
+  - Information = H, as H equals N times the logarithm of S, where:
+    - H is our information
+    - N is the number of symbols in the message
+    - S is the number of different symbols available at each selection
+  - This can also be written as H = log(S^N)
+- So, **information** is the **logarithm of the message space**
+
+---
+
+- **Bernoulli** proved that the expected value of simple statistical observations will converge on the actual ratio as the number of trials increases, known as the **weak law of large numbers**. 
+- **Francis Galton's bean machine** visualizes a **binomial distribution**, which appears to be an ideal form as it kept appearing everywhere any time you looked at the variation of a large number of random trials. 
+- Pavel Nekrasov, originally a theologian by training, didn't like the idea of us having this predetermined statistical fate. He made a famous claim that **independence** is a necessary condition for the law of large numbers
+- This claim angered another Russian mathematician, **Andrey Markov**
+- Markov extends Bernoulli's results to dependent variables using an ingenious construction - **Markov state machine**.
+- Markov proved that as long as every state in the machine is reachable, when you run these machines in a sequence, they reach equilibrium.
+- The concept of modeling sequences of random events using states and transitions between states became known as a **Markov chain**.
+
+![Markov Chain](https://bookdown.org/probability/beta/MC1.png)
 
 ### Informacijos entropija Paskaitos: 1) A mathematical theory of communication 2)   Information entropy
 
