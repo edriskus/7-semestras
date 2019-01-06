@@ -234,7 +234,17 @@ Klausimai
 
 ---
 
+- In the 1940s, **Richard Hamming** designed a method which could automatically detect and correct single bit errors, without interrupting calculations.
+- A **parity bit** is a single bit which is added to the end of a message, and indicates whether the number of **ones** in the message is **even or odd**.
+  - If a single error occurs, the receiver could then detect it, because the parity bit will no longer match. However to detect and correct single errors, Hamming needed to add more parity bits to identify the error location. This leads to his **seven-four code**, which adds three parity bits to each block of four data bits as follows:
+    - First we start with the **three parity bits**, which can be represented by a circle.
+    - The **four data bits** are placed inside these regions in a specific order.
+    - To calculate the parity bits, we look at each circle one at a time, each containing three data bits.
+  - This system can automatically correct single errors with a simple rule: If a single error occurs, two or more of the parity bits will be incorrect, and wherever they intersect is the location of the error.
+- All error-correction codes increase the size of the source messages slightly, at the expense of automatically correcting errors.
+- Claude **Shannon** used this idea of redundancy to redefine the capacity of a communication channel, because as the noise on your channel increases, we must increase the amount of redundancy to communicate error-free. This must then decrease the effective amount of information you can send per unit time.
 
+![Hamming Code](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Hamming%287%2C4%29.svg/320px-Hamming%287%2C4%29.svg.png)
 
 ### SETI projektas Paskaitos: 1) The search for extraterrestrial intelligence
 
