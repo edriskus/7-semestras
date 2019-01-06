@@ -265,6 +265,17 @@ Klausimai
 
 ### Binarinis simetrinis kanalas ir klaidų korekcijos kodai (Žiūrėti skaidres: Information theory Lect3 v1  )
 
+- In probability theory and statistics, the **binomial distribution** with parameters n and p is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a yes–no question, and each with its own boolean-valued outcome: a random variable containing a single bit of information: success/yes/true/one (with probability p) or failure/no/false/zero (with probability q = 1 − p).
+  - ![Binomial Distribution](https://wikimedia.org/api/rest_v1/media/math/render/svg/b872c2c7bfaa26b16e8a82beaf72061b48daaf8e)
+  - Binomial Coefficient: ![Binomial Coefficient](https://wikimedia.org/api/rest_v1/media/math/render/svg/d33401621fb832dd2f9783e80a906d562f669008)
+  - Mean (Expected value of X): ![Mean](https://wikimedia.org/api/rest_v1/media/math/render/svg/3f16b365410a1b23b5592c53d3ae6354f1a79aff)
+  - Varianca (deviation): ![Variance](https://wikimedia.org/api/rest_v1/media/math/render/svg/bf5b4b6e591c413e746d1ba867277e99b9b083b9)
+- A **binary symmetric channel** (or BSC) is a common communications channel model used in coding theory and information theory. In this model, a transmitter wishes to send a bit (**a zero or a one**), and the receiver receives a bit. It is assumed that the bit is usually transmitted correctly, but that it will be "flipped" with a small **probability** (the "crossover probability"). This channel is used frequently in information theory because it is one of the simplest channels to analyze.
+  - ![Channel](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Binary_symmetric_channel_%28en%29.svg/1200px-Binary_symmetric_channel_%28en%29.svg.png)
+  - Conditional Probabilities: ![Conditional Probabilities](https://wikimedia.org/api/rest_v1/media/math/render/svg/729fb9668be91ed00a76c0c0692425e24035648f)
+
+---
+
 - ...
 
 ### Šaltinio kodavimo teorema . (Žiūrėti skaidres: Information_theory_Lect4_v1)
@@ -291,24 +302,53 @@ Klausimai
 
 ### Kvantinio kompiuterio veikimas
 
-- ...
+- Kvantiniai kompiuteriai naudoja qbitus.
+- **Qbitas** (Kubitas) – kintanti kvantinė būsena.
+- Kubitas yra pagrindinė varomoji galia kvantinio kompiuterio. Kubitas gali saugoti dvi reikšmės 1 arba 0 arba jų superpoziciją.
+- **Superpozicija** – kvantas esantis superpozicijoje turėti dvi reikšmes vienu metu. Šito neturi klasikinė fizika.
 
 ### Moderni kriptografija
 
-- ...
+- **Kriptografija** – mokslas, tiriantis informacijos užšifravimo ir iššifravimo metodus. Kriptografija yra sudėtinė kriptologijos mokslo dalis.
+- Privalumai:
+  - Konfidencialumas – informacijos apsauga nuo neautorizuoto priėjimo.
+  - Autentifikacija – tam tikros technikos užtikrina, kad informacija yra tikra ir nesuklastota.
+  - Nepažeistumas – tam tikri algoritmai užtikrina, kad duomenys nebūtų pažeisti ir vientysi.
+- Minusai:
+  - Sudėtinga pasiekti netgi vartojui.
+  - Kriptografija išnaudoja nemažai laiko ir pinigų. Dėl reikalingų perskaičiavimų, daugiau laiko prireikia.
+  - Gerą kriptografijos būdą implementuoti yra sudėtinga.
+- Kvantinė kriptografija skiriasi nuo paprastos kriptografijos tuo, kad paprasta kriptografija remiasi matematika, o kvantinė – fizika.
+- Kvantinėj kriptografijoj, raktai yra sudėti iš fotonų. Kvantinė kriptografijoje fotonai gali būti keletoj fazių vienu metu.
 
 ### Bitcoin veikimo sprendimai
 
-- ...
+- Kadangi Bitcoin yra **decentralizuota**, Bitcoin nėra reguliuojama (kaip paprastos valiutos).
+- Paprastos valiutos turi centrinį procesorių transakcijų (pavyzdžiui, **bankas**), kuris registruoja visus atliekamus mokėjimus.
+- Bitcoin transakcijos yra saugomos kiekviename kompiuteryje, kuris yra susijęs su Bitcoin. Būtent ši saugykla vadinama dižiąja knyga (**ledger**).
+- Kiekvienoje transakcijoje, tinklas nuskaito siuntėjo ir gavėjo Bitcoin adresus, kiekį kiek perkelta Bitcoin ir užregistruoja į didžiosios knygos galą arba įrašą, pavadinimu - **Blockchain**. Blockchain yra atnaujinamas apie 100 kartų per dieną ir yra atnaujinamas kiekviename kompiuteryje, kuriame yra naudojama Bitcoin technologija.
 
 ### Ląsteliniai automatai
 
-- ...
+- Ląsteliniai automatai yra diskretinis modelis. Apskritai skirtas sumodeliuot reikalingą situaciją tam tikroje aplinkoje. Cellular automata can simulate a variety of real-world systems, including biological and chemical ones.
+- In two dimensions, the best-known cellular automaton is **Conway's game of life**, discovered by J. H. Conway in 1970.
+- A cellular automaton is a model of a system of “cell” objects with the following characteristics:
+  - The cells live on a **grid**. (We’ll see examples in both one and two dimensions in this chapter, though a cellular automaton can exist in any finite number of dimensions.)
+  - Each cell has a **state**. The number of state possibilities is typically finite. The simplest example has the two possibilities of 1 and 0 (otherwise referred to as “on” and “off” or “alive” and “dead”).
+  - Each cell has a **neighborhood**. This can be defined in any number of ways, but it is typically a list of adjacent cells.
+- Yra sukurta 256 taisykliu, kurios nurodo, kaip elgiasi ląstelės, t.y. kas atsitinka su kaimynais, jeigu viena ląstelė įsijungia arba išsijungia. Vienas populiariausių ir paskaitose nagrinėjome - Rule 30. Its rule outcomes are encoded in the binary representation 30 = 00011110 (base2).
+- One of the many interesting phenomena in life is the existence of "**gliders**": small patterns that move across the grid.
 
 ### Fraktalai
 
-- ...
+- Fraktalas – geometrinis darinys, kurio atskiri dariniai yra panašūs arba identiški visumai arba kitiems fragmentams. Pagrindinė fraktalų savybė – panašumas į save. Kitais žodžiais, maža figūros struktūros dalis atrodo identiška didžiajai.
+- Klasifikijuoami į:
+  1. Tikslus savipanašumas
+  2. Apytikslis savipanašumas
+  3. Statistiniis savipanašumas.
 
 ### Chaosas
 
-- ...
+- **Chaoso sistemos** yra matematikos rūšis, kuri studijuoja dinamiškų sistemų elgesį, kurios labai priklauso nuo pradinės būsenos.
+- Chaoso sistemos nors iš pirmo žvilgsnio atrodo nenuspėjamos, jos susideda iš tam tikrų paternų, pastovių „feedback loops“, repeticijos, fraktalų ir t.t.
+- Chaoso sistemos priklauso nuo pradinės būsenos. Pavyzdžiui, oras ir klimatas. Priklausomai nuo pradinės būsenos, oras gali būt toks ir toks.
