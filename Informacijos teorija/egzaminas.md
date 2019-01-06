@@ -182,8 +182,8 @@ Klausimai
 
 ---
 
-- **Bernoulli** proved that the expected value of simple statistical observations will converge on the actual ratio as the number of trials increases, known as the **weak law of large numbers**. 
-- **Francis Galton's bean machine** visualizes a **binomial distribution**, which appears to be an ideal form as it kept appearing everywhere any time you looked at the variation of a large number of random trials. 
+- **Bernoulli** proved that the expected value of simple statistical observations will converge on the actual ratio as the number of trials increases, known as the **weak law of large numbers**.
+- **Francis Galton's bean machine** visualizes a **binomial distribution**, which appears to be an ideal form as it kept appearing everywhere any time you looked at the variation of a large number of random trials.
 - Pavel Nekrasov, originally a theologian by training, didn't like the idea of us having this predetermined statistical fate. He made a famous claim that **independence** is a necessary condition for the law of large numbers
 - This claim angered another Russian mathematician, **Andrey Markov**
 - Markov extends Bernoulli's results to dependent variables using an ingenious construction - **Markov state machine**.
@@ -194,7 +194,29 @@ Klausimai
 
 ### Informacijos entropija Paskaitos: 1) A mathematical theory of communication 2)   Information entropy
 
-- ...
+- In 1949, **Shannon** used Markov models as the basis for how we can think about communication:
+  - Imagine text written in letters A, B, and C. You notice As seem to clump together, while Bs and Cs do not.
+  - **0th-order** approximation - select each symbol A, B, or C at random
+  - **1st-order** approximation, where the letters are chosen independently, but according to the probability of each letter in the original sequence.
+  - **2nd-order** approximation takes into account each **pair** of letters which can occur.
+    - We start anywhere and pick a tile, and we write down our output the first letter
+    - Then we move to the cup defined by the second letter. We pick a new tile, and repeat this process indefinitely
+    - Notice that this sequence is starting to look very similar to the original message, because this model is capturing the conditional dependencies between letters.
+  - If we wanted to do even better, we could move to a **3rd-order** approximation, which takes into account groups of three letters, or "**trigrams**".
+- Next, Shannon applies this exact same logic to actual **English** text, using statistics that were known for letters, pairs, and trigrams, etc.
+  - He shows the **same progression** from zeroth-order random letters to first-order, second-order and third-order sequences.
+  - He then goes on and tries the same thing using **words instead of letters**
+    - The resemblance to ordinary English text "increases quite noticeably at each depth."
+
+---
+
+- **Claude Shannon** calls the measure of average uncertainty "entropy", and he uses the letter H to represent it.
+- The unit of entropy Shannon chooses, is based on the uncertainty of a fair coin flip, and he calls this "**the bit**", which is equivalent to a fair bounce.
+- Entropy or H, is the summation **for each symbol** of the **probability** of that symbol times the **logarithm** base two of one over the probability of that symbol.
+- Entropy is **maximum** when all outcomes are **equally likely**.
+- The fundamental idea is that, if the entropy of an information source drops, that means we can ask fewer questions to guess the outcome.
+
+![Entropy](https://computersciencesource.files.wordpress.com/2010/01/entropycalc1.png)
 
 ### Kompresijos kodai ir klaidų korekcija. Paskaitos: 1) Compression codes 2) Error correction
 
