@@ -86,7 +86,7 @@ Klausimai
 - The **signal fire** - one difference, two states.
 - **Polybius** was a Greek historian born in 200 BC. The limitation of a signal fire was clear to him.
 - A fire signal is great when the space of possible messages is small. However, when the message space, which is the total number of possible messages, grows there was a need to communicate many differences.
-- **Aeneas Tacticus**, one of the earliest Greek writers on the art of war from the fourth century, BC, developed** the equal water vessel** communication method.
+- **Aeneas Tacticus**, one of the earliest Greek writers on the art of war from the fourth century, BC, developed **the equal water vessel** communication method.
   - First, sender and receiver raises the torch to indicate message start
   - Then, the sender lowers the torch and opens his vessel
   - The receiver opens his vessel when he sees the torch lowered
