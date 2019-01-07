@@ -269,34 +269,103 @@ Klausimai
   - ![Binomial Distribution](https://wikimedia.org/api/rest_v1/media/math/render/svg/b872c2c7bfaa26b16e8a82beaf72061b48daaf8e)
   - Binomial Coefficient: ![Binomial Coefficient](https://wikimedia.org/api/rest_v1/media/math/render/svg/d33401621fb832dd2f9783e80a906d562f669008)
   - Mean (Expected value of X): ![Mean](https://wikimedia.org/api/rest_v1/media/math/render/svg/3f16b365410a1b23b5592c53d3ae6354f1a79aff)
-  - Varianca (deviation): ![Variance](https://wikimedia.org/api/rest_v1/media/math/render/svg/bf5b4b6e591c413e746d1ba867277e99b9b083b9)
+  - Variance (deviation): ![Variance](https://wikimedia.org/api/rest_v1/media/math/render/svg/bf5b4b6e591c413e746d1ba867277e99b9b083b9)
 - A **binary symmetric channel** (or BSC) is a common communications channel model used in coding theory and information theory. In this model, a transmitter wishes to send a bit (**a zero or a one**), and the receiver receives a bit. It is assumed that the bit is usually transmitted correctly, but that it will be "flipped" with a small **probability** (the "crossover probability"). This channel is used frequently in information theory because it is one of the simplest channels to analyze.
   - ![Channel](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Binary_symmetric_channel_%28en%29.svg/1200px-Binary_symmetric_channel_%28en%29.svg.png)
   - Conditional Probabilities: ![Conditional Probabilities](https://wikimedia.org/api/rest_v1/media/math/render/svg/729fb9668be91ed00a76c0c0692425e24035648f)
 
 ---
 
-- ...
+- Error correcting codes:
+  - **R^n** - repetition code - each symbol repeated n times
+  - **R^3** - each symbol repeated 3 times - P(s≠s^)=3f^2(1 - f) + f^3 = 3f^2 - 2f^3 (≈ 0.03 with f = 0.1)
+  - **Hamming Code**
+- **Shannon's noisy-channel coding theorem** establishes that for any given degree of noise contamination of a communication channel, it is possible to communicate discrete data (digital information) **nearly error-free** up to a **computable maximum rate** through the channel. This result was presented by Claude Shannon in 1948 and was based in part on earlier work and ideas of Harry Nyquist and Ralph Hartley.
+  
+![Shannon](http://www.inference.org.uk/itprnn/1997/l1/img72.gif)
 
 ### Šaltinio kodavimo teorema . (Žiūrėti skaidres: Information_theory_Lect4_v1)
 
-- ...
+- **Shannon's source coding theorem** (or noiseless coding theorem) establishes the limits to possible data compression, and the operational meaning of the Shannon entropy.
+- The source coding theorem shows that (in the limit, as the length of a stream of independent and identically-distributed random variable (i.i.d.) data tends to infinity) it is impossible to compress the data such that the code rate (average number of bits per symbol) is less than the Shannon entropy of the source, without it being virtually certain that information will be lost. However it is possible to get the code rate **arbitrarily close to the Shannon entropy**, with negligible probability of loss.
+- Information entropy is the average rate at which information is produced by a stochastic source of data.
+- The measure of information entropy associated with each possible data value is the negative logarithm of the probability mass function for the value:
+
+![Shannon's Entropy](https://wikimedia.org/api/rest_v1/media/math/render/svg/f96cf5194b9102f383a05c04c8994e7af8b161fb)
 
 ### Simbolių kodai . (Žiūrėti skaidres: Information_theory_Lect4_v1)
 
-- ...
+- **Symbol codes** are guaranteed to compress and decompress without any errors; but there is a chance that the codes may sometimes produce encoded strings longer than the original source string.
+- The idea is that we can achieve compression, on average, by assigning shorter encodings to the more probable outcomes and longer encodings to the less probable.
+  - **Codeword Supermarket**
+- A symbol code is called a **prefix code** if no codeword is a prefix of any other codeword.
+  - **Huffman Coding**
 
 ### Aritmetiniai kodai. (Žiūrėti skaidres:  Information_theory_Lect5_v1 )
 
-- ...
+- Simboliniai kodai prastai veikia, jei viena tikimybė yra didelė, o visos kitos mažos. Tai išsprendžia aritmetinis kodas (Bet jis nėra vienintelis sprendimo būdas).
+- Bet kokį duomenį galima aprašyti kaip **intervalą tarp dviejų skaičių**, kurie yra tarp 0 ir 1.
+- Jei turim simbolius su tikimybėm, juos galim paverst į intervalus. Tarkim, tikimybes:
+  - P(x=a) = 0.25,
+  - P(x=b) = 0.25,
+  - P(x=c) = 0.5,
+- Pagal ittervalus:
+  - a [0, 0.25],
+  - b [0.25, 0.5],
+  - c [0.5, 1]
+- Pvz., turint a,b,c intervalus galime suformuoti žinutę - cca. cca intervalas bus [0.75, 0.8125]
+  - Gavus intervalą jį galima įstatyti į šitą grafą ir iš jo gaunam, binarinį kodą - 1100.
 
 ### LZW kompresijos algoritmas (Žiūrėti skaidres:  Information_theory_Lect5_v1 )
 
-- ...
+- **Lempel–Ziv–Welch (LZW)** is a universal lossless data compression algorithm created by Abraham Lempel, Jacob Ziv, and Terry Welch.
+  - LZW compression uses a code table, with 4096 as a common choice for the number of table entries. Codes 0-255 in the code table are always assigned to represent **single bytes** from the input file.
+  - When encoding begins the code table contains only the first 256 entries, with the remainder of the table being **blanks**. Compression is achieved by using codes 256 through 4095 to represent sequences of bytes.
+  - As the encoding continues, LZW **identifies repeated sequences** in the data, and **adds** them to the code table.
+  - Decoding is achieved by taking each code from the compressed file and translating it through the code table to **find** what character or characters it represents.
+
+Encoding:
+
+```none
+  *     PSEUDOCODE
+  1     Initialize table with single character strings
+  2     P = first input character
+  3     WHILE not end of input stream
+  4          C = next input character
+  5          IF P + C is in the string table
+  6            P = P + C
+  7          ELSE
+  8            output the code for P
+  9          add P + C to the string table
+  10           P = C
+  11         END WHILE
+  12    output code for P 
+```
+
+Decoding:
+
+```none
+*    PSEUDOCODE
+1    Initialize table with single character strings
+2    OLD = first input code
+3    output translation of OLD
+4    WHILE not end of input stream
+5        NEW = next input code
+6        IF NEW is not in the string table
+7               S = translation of OLD
+8               S = S + C
+9       ELSE
+10              S = translation of NEW
+11       output S
+12       C = first character of S
+13       OLD + C to the string table
+14       OLD = NEW
+15   END WHILE
+```
 
 ### Kanalo su triukšmu teorema. (Žiūrėti skaidres: Information_theory_Lect6_v1 )
 
-- ...
+- Bet koks fizinis duomenų perdavimo kanalas negali būti 100% patikimas. Pagal Shannon’ą  galima naudoti ir nepatikima kanalą su dideliu triukšmu ir perduoti informacija patikimu būdu, t.y. nieko neprarasti. Tad reikėtų ne stengtis atrasti kuo švaresnį duomenų perdavimo būdą (didinant stiprumą - tai kainuoja ir dažniausiai neapsimoka\neįmanoma), o **optimizuoti** kodavimo ir dekodavimo algoritmus.
 
 ## III Dalis (Skaidrės, Wikipedia, YouTube)
 
