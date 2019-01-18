@@ -1,0 +1,71 @@
+# Konspektas
+
+- **Intelektinė nuosavybė** yra žmogaus *intelektinio darbo rezultatas*
+- **Intelektinė nuosavybė** yra *kompleksas išimtinių subjektyvinių teisių*, leidžiančių kontroliuoti informaciją.
+- **Asmens duomenys** – bet kokia *informacija* apie fizinį asmenį, kurio tapatybė nustatyta arba kurio tapatybę galima nustatyti (duomenų subjektas);
+- LR teises ir ES teises
+  - **EK komunikatas** apie neteisėtą ir žalingą turinį Internete
+    - būtinybė užtikrinti laisvą informacijos platinimą (teisę į informaciją), apsaugant viešąjį interesą.
+  - **Žalioji knyga** apie nepilnamečių ir žmogiškojo orumo apsaugą
+    - Neskelbtina informacija, info pazeidzianti paaugliu vystymasi, etc...
+  - **Saugesnio interneto veiksmu planas**:
+    - Numatyta skatinti verslą taikyti savireguliacijos ir turinio kontrolės programas
+    - Kurti ir diegti turinio filtravimo priemones
+    - Nustatyti tinkamą teisinį reguliavimą
+    - Plėtoti tarptautinį bendradarbiavimą šioje srityje
+  - **Elektronines komercijos** direktyva.
+    - Dėl kai kurių informacinės visuomenės paslaugų
+- Isvardint kokios licencijos
+  - **Laisvosios**
+    - Neribotos - skatina bendruomenę kartu tobulinti programas.
+      - privaloma kartu pateikti jų licencijos tekstą
+      - draudžia pateikti programą be jos išeities teksto
+      - Draudimas uždaryti kodą
+      - platinti tik tokiomis pačiomis sąlygomis
+  - **Nuosavybines**
+    - Įmonė išlieka programos savininku. Vartotojas neturi teisės tobulinti tokią programą.
+      - Draudimas kopijuoti.
+      - leidžiama naudoti tik viename kompiuteryje.
+      - leidžiama naudoti tik konkreciame kompiuteryje.
+      - Laiko ribojimas
+      - Paleidimų skaičiaus ribojimas
+- Kuo autorine teise nuo nuosavybess teises.
+  - **Autorių teisės** - tai turtinės ir asmeninės neturtinės autoriaus teisės į **jo sukurtą intelektinį** (meninį, techninį ar kt.) kūrinį.
+    - **Turtinės teisės** suteikia autoriui teisę **kontroliuoti** jo kūrinio **panaudojimą** ir teisę **gauti pajamas** už kūrinio panaudojimą. 
+    - **Neturtinės teisės** tai autorystės teisės, teisė į autoriaus vardą, būti paminėtam ant kūrinio viršelio ir pan.
+  - **Pramoninė nuosavybė**: išradimai, naudingieji modeliai, pramoninis dizainas, prekių ženklai, paslaugų ženklai ir kt. Tai reiškia **turi būti patentas**.
+- Dvi naujos subjektu teises isvardinti:
+  - teise i **duomenu perkelima**
+  - teise **buti pamirstam**.
+- EU valstybio **saugesnio interneto kurimo plano** numatytos **priemones**:
+  - saugesnės aplinkos kūrimas;
+  - savireguliavimo ir elgesio kodeksų skatinimas;
+  - filtravimo ir kategorijų priskyrimo sistemų diegimas;
+  - visuomenės informavimas;
+  - palaikymo veiksmai.
+- Dokumentai kurie reglamentuoja info turini lietuvoje:
+  - **LR visuomenės informavimo** įstatymas
+  - **LR Nepilnamečių apsaugos** nuo neigiamo viešosios informacijos poveikio įstatymas
+    - Neigiamą poveikį nepilnamečiams darančia informacija laikoma tokia viešoji informacija, kuri  gali būti žalinga nepilnamečių psichinei ar fizinei sveikatai, fiziniam, protiniam, dvasiniam ar doroviniam vystymuisi.
+  - **LR Vaiko teisių apsaugos** įstatymas
+  - **LR Valstybės ir tarnybos paslapčių** įstatymas
+- Kas yra elektronines informacijos erdve:
+  - Tai pasaulinė viešai ir **visuotinai prieinama kompiuterių tinklų sistema**. Pagrindinė funkcija: prieiga prie informacijos ir jos mainai.
+  - Naudojimo galimybės:
+    - Asmeniškai
+    - Komunikuojant grupe
+- Elektronines erdves **savybes**:
+  - Neturi sienų
+  - Informacija iš karto tampa vieša
+  - Informacija visiems prieinama vienu metu
+  - Nedidelės prieigos sąnaudos
+  - Aplinka visiškai naujiems produktams kurti
+  - Talpinant informaciją reikia atsižvelgti į visas pasaulio kultūras ir normas
+- Bendrosios teisinės informacijos savybės
+  - Informacijos **fiksuojamumas laikmenose** – šiuolaikinė teisinė informacija nuolatos egzistuoti gali tik  - fiziniuose spaudiniuose ir laikmenose, t.y. teisės šaltiniuose;
+  - Informacijos **perduodamumas** – teisinė informacija gali išlikti tik ją perduodant, o jai įsisavinti reikalinga energija, lėšos ir laikas;
+  - Informacijos **nekonkurencingumas** – informacija perduota į kitą sistemą, gali pasilikti ir pirmoje sistemoje, o tai ypač svarbu sprendžiant teisinės informacijos laikymo, apsaugos bei platinimo klausimus.
+- Teisines informacijos **skirstymas pagal sakas**:
+  - Pagal baudžiamąją teisę
+  - Pagal civilinę
+  - Pagal procesinę
