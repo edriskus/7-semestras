@@ -2,6 +2,7 @@
 
 - [Programų Sistemų Testavimas](https://edriskus.github.io/7-semestras/Programu%20Sistemu%20testavimas/egzaminas)
 - [Informacijos Teorija](https://edriskus.github.io/7-semestras/Informacijos%20teorija/egzaminas)
+- [Informatikos Teisė](https://edriskus.github.io/7-semestras/Informatikos%20Teise/klausimai)
 
 ```none
 "THE BEER-WARE LICENSE" (Revision 42):
